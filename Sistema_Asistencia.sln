@@ -1,14 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sistema_Asistencia", "Sistema_Asistencia\Sistema_Asistencia.vbproj", "{9231CD09-03AB-4DE4-8B83-E55D237C938E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sistema Alhuata", "Sistema_Asistencia\Instalador\Instalador\Instalador.vdproj", "{21B27DA5-AA0F-4425-91AD-B7521B6F879C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{872B697C-9E3F-408D-8A8E-ED7AC6DC61E2}.Debug|x86.ActiveCfg = Debug
-		{872B697C-9E3F-408D-8A8E-ED7AC6DC61E2}.Release|x86.ActiveCfg = Release
+		{9231CD09-03AB-4DE4-8B83-E55D237C938E}.Debug|x86.ActiveCfg = Debug|x86
+		{9231CD09-03AB-4DE4-8B83-E55D237C938E}.Debug|x86.Build.0 = Debug|x86
+		{9231CD09-03AB-4DE4-8B83-E55D237C938E}.Release|x86.ActiveCfg = Release|x86
+		{9231CD09-03AB-4DE4-8B83-E55D237C938E}.Release|x86.Build.0 = Release|x86
+		{21B27DA5-AA0F-4425-91AD-B7521B6F879C}.Debug|x86.ActiveCfg = Debug
+		{21B27DA5-AA0F-4425-91AD-B7521B6F879C}.Debug|x86.Build.0 = Debug
+		{21B27DA5-AA0F-4425-91AD-B7521B6F879C}.Release|x86.ActiveCfg = Release
+		{21B27DA5-AA0F-4425-91AD-B7521B6F879C}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

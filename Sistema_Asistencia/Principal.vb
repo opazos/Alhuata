@@ -37,80 +37,135 @@ Public Class Principal
     End Sub
 
     Sub valida_hora_formulario()
+
         'Defino las horas
-        Dim h1, hemin, hemax, hsmin, hsmax, htmin, htmax, hstmin, hstmax, entrada_man, salida_man, entrada_tarde, salida_tarde As Date
+        Dim hora, entrada, salida, entrada_max, salida_max, mediodia As Date
+        hora = Format(Now, "Short Time")
+        entrada = Format((TimeValue("08:00:00 a.m.")), "Short Time")
+        entrada_max = Format((TimeValue("08:45:00 a.m.")), "Short Time")
+        salida = Format((TimeValue("17:30:00 p.m.")), "Short Time")
+        salida_max = Format((TimeValue("19:00:00 p.m.")), "Short Time")
+        mediodia = Format((TimeValue("13:00:00 p.m.")), "Short Time")
 
-        h1 = Format(Now, "Short Time")
-        entrada_man = Format((TimeValue(txt_e_m.Text)), "Short Time")
-        salida_man = Format((TimeValue(txt_s_m.Text)), "Short Time")
-        entrada_tarde = Format((TimeValue(txt_e_t.Text)), "Short Time")
-        salida_tarde = Format((TimeValue(txt_s_t.Text)), "Short Time")
-        hemin = Format((TimeValue(txt_min_em.Text)), "Short Time")
-        hemax = Format((TimeValue(txt_max_em.Text)), "Short Time")
-        hsmin = Format((TimeValue(txt_min_sm.Text)), "Short Time")
-        hsmax = Format((TimeValue(txt_max_sm.Text)), "Short Time")
-        htmin = Format((TimeValue(txt_min_et.Text)), "Short Time")
-        htmax = Format((TimeValue(txt_max_et.Text)), "Short Time")
-        hstmin = Format((TimeValue(txt_min_st.Text)), "Short Time")
-        hstmax = Format((TimeValue(txt_max_st.Text)), "Short Time")
 
-        If h1 >= entrada_man And h1 <= hemin Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO MAÑANA - PUNTUAL"
+        If hora >= entrada And hora <= entrada_max Then
+            GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO"
             bloqueo_asistencia(True)
             bloqueo_justificacion(False)
             txt_puntualidad.Text = 1
             txt_tipo.Text = "INGRESO"
             txt_turno.Text = "MAÑANA"
-        ElseIf h1 > hemin And h1 <= hemax Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO MAÑANA - TARDANZA"
+        ElseIf hora > entrada_max And hora < mediodia Then
+            GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO - TARDANZA"
             bloqueo_asistencia(True)
             bloqueo_justificacion(True)
             txt_puntualidad.Text = 0
             txt_tipo.Text = "INGRESO"
             txt_turno.Text = "MAÑANA"
-        ElseIf h1 >= salida_man And h1 <= hsmax Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA MAÑANA"
-            bloqueo_asistencia(True)
-            bloqueo_justificacion(False)
-            txt_puntualidad.Text = 1
-            txt_tipo.Text = "SALIDA"
-            txt_turno.Text = "MAÑANA"
-        ElseIf h1 >= entrada_tarde And h1 <= htmin Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO TARDE - PUNTUAL"
-            bloqueo_asistencia(True)
-            bloqueo_justificacion(False)
-            txt_puntualidad.Text = 1
-            txt_tipo.Text = "INGRESO"
-            txt_turno.Text = "TARDE"
-        ElseIf h1 > htmin And h1 <= htmax Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO TARDE - TARDANZA"
+        ElseIf hora > mediodia And hora < salida Then
+            GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA - ANTICIPADA"
             bloqueo_asistencia(True)
             bloqueo_justificacion(True)
             txt_puntualidad.Text = 0
-            txt_tipo.Text = "INGRESO"
-            txt_turno.Text = "TARDE"
-        ElseIf h1 >= salida_tarde And h1 <= hstmin Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA TARDE - PUNTUAL"
-            bloqueo_asistencia(True)
-            bloqueo_justificacion(False)
-            txt_puntualidad.Text = 1
             txt_tipo.Text = "SALIDA"
             txt_turno.Text = "TARDE"
-        ElseIf h1 > hstmin And h1 <= hstmax Then
-            GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA TARDE - TARDANZA"
+        ElseIf hora >= salida And hora <= salida_max Then
+            GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA"
             bloqueo_asistencia(True)
-            bloqueo_justificacion(True)
+            bloqueo_justificacion(False)
             txt_puntualidad.Text = 0
             txt_tipo.Text = "SALIDA"
             txt_turno.Text = "TARDE"
         Else
-            GroupBox2.Text = "ASISTENCIA - BLOQUEADO"
+            GroupBox2.Text = "REGISTRAR ASISTENCIA - SISTEMA BLOQUEADO"
             bloqueo_asistencia(False)
             bloqueo_justificacion(False)
             txt_puntualidad.Text = 0
-            txt_tipo.Text = "OTRO"
-            txt_turno.Text = "OTRO"
         End If
+
+
+
+
+
+
+
+
+
+
+        'Defino las horas
+        'Dim h1, hemin, hemax, hsmin, hsmax, htmin, htmax, hstmin, hstmax, entrada_man, salida_man, entrada_tarde, salida_tarde As Date
+
+        'h1 = Format(Now, "Short Time")
+        'entrada_man = Format((TimeValue(txt_e_m.Text)), "Short Time")
+        'salida_man = Format((TimeValue(txt_s_m.Text)), "Short Time")
+        'entrada_tarde = Format((TimeValue(txt_e_t.Text)), "Short Time")
+        'salida_tarde = Format((TimeValue(txt_s_t.Text)), "Short Time")
+        'hemin = Format((TimeValue(txt_min_em.Text)), "Short Time")
+        'hemax = Format((TimeValue(txt_max_em.Text)), "Short Time")
+        'hsmin = Format((TimeValue(txt_min_sm.Text)), "Short Time")
+        'hsmax = Format((TimeValue(txt_max_sm.Text)), "Short Time")
+        'htmin = Format((TimeValue(txt_min_et.Text)), "Short Time")
+        'htmax = Format((TimeValue(txt_max_et.Text)), "Short Time")
+        'hstmin = Format((TimeValue(txt_min_st.Text)), "Short Time")
+        'hstmax = Format((TimeValue(txt_max_st.Text)), "Short Time")
+
+        'If h1 >= entrada_man And h1 <= hemin Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO MAÑANA - PUNTUAL"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(False)
+        '    txt_puntualidad.Text = 1
+        '    txt_tipo.Text = "INGRESO"
+        '    txt_turno.Text = "MAÑANA"
+        'ElseIf h1 > hemin And h1 <= hemax Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO MAÑANA - TARDANZA"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(True)
+        '    txt_puntualidad.Text = 0
+        '    txt_tipo.Text = "INGRESO"
+        '    txt_turno.Text = "MAÑANA"
+        'ElseIf h1 >= salida_man And h1 <= hsmax Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA MAÑANA"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(False)
+        '    txt_puntualidad.Text = 1
+        '    txt_tipo.Text = "SALIDA"
+        '    txt_turno.Text = "MAÑANA"
+        'ElseIf h1 >= entrada_tarde And h1 <= htmin Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO TARDE - PUNTUAL"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(False)
+        '    txt_puntualidad.Text = 1
+        '    txt_tipo.Text = "INGRESO"
+        '    txt_turno.Text = "TARDE"
+        'ElseIf h1 > htmin And h1 <= htmax Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - INGRESO TARDE - TARDANZA"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(True)
+        '    txt_puntualidad.Text = 0
+        '    txt_tipo.Text = "INGRESO"
+        '    txt_turno.Text = "TARDE"
+        'ElseIf h1 >= salida_tarde And h1 <= hstmin Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA TARDE - PUNTUAL"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(False)
+        '    txt_puntualidad.Text = 1
+        '    txt_tipo.Text = "SALIDA"
+        '    txt_turno.Text = "TARDE"
+        'ElseIf h1 > hstmin And h1 <= hstmax Then
+        '    GroupBox2.Text = "REGISTRAR ASISTENCIA - SALIDA TARDE - TARDANZA"
+        '    bloqueo_asistencia(True)
+        '    bloqueo_justificacion(True)
+        '    txt_puntualidad.Text = 0
+        '    txt_tipo.Text = "SALIDA"
+        '    txt_turno.Text = "TARDE"
+        'Else
+        '    GroupBox2.Text = "ASISTENCIA - BLOQUEADO"
+        '    bloqueo_asistencia(False)
+        '    bloqueo_justificacion(False)
+        '    txt_puntualidad.Text = 0
+        '    txt_tipo.Text = "OTRO"
+        '    txt_turno.Text = "OTRO"
+        'End If
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
@@ -174,7 +229,7 @@ Public Class Principal
         Process.Start("http://www.sierrasur.gob.pe/alhuata/")
     End Sub
 
-    Private Sub desbloqueo_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles desbloqueo.CheckedChanged
+    Private Sub desbloqueo_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         bloqueo_asistencia(True)
         bloqueo_justificacion(True)
         Timer2.Stop()
