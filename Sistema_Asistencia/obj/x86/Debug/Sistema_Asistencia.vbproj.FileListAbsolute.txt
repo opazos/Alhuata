@@ -34,3 +34,22 @@ V:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Si
 V:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.xml
 V:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.pdb
 V:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.Frmreporte.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.exe
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.xml
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.pdb
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.FrmHorario.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.FrmOlp.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.Frmreporte.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.FrmSalida.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.FrmUsuario.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.Principal.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.Resources.resources
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema_Asistencia.vbproj.GenerateResource.Cache
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\bin\Debug\Sistema de asistencia de personal.exe.manifest
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\bin\Debug\Sistema de asistencia de personal.application
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\bin\Debug\Sistema de asistencia de personal.exe
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\bin\Debug\Sistema de asistencia de personal.pdb
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\bin\Debug\Sistema de asistencia de personal.xml
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.TrustInfo.xml
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.exe.manifest
+W:\Proyectos Visual Basic\Sistema_Asistencia\Sistema_Asistencia\obj\x86\Debug\Sistema de asistencia de personal.application

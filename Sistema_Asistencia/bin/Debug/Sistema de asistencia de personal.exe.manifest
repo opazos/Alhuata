@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema de asistencia de personal.exe" size="344576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sistema de asistencia de personal.exe" size="345600">
       <assemblyIdentity name="Sistema de asistencia de personal" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>aIbkEYADT6LZO9YkckTOaUz9Wd8=</dsig:DigestValue>
+        <dsig:DigestValue>pXJBmpXP9GMsMbGcLTjwS/Cj/XY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -88,7 +88,8 @@ Partial Class Principal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.SistemaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(958, 33)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1277, 40)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -96,59 +97,61 @@ Partial Class Principal
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarSalidaToolStripMenuItem, Me.SalirDelSistemaToolStripMenuItem1})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(84, 29)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(107, 36)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'RegistrarSalidaToolStripMenuItem
         '
         Me.RegistrarSalidaToolStripMenuItem.Name = "RegistrarSalidaToolStripMenuItem"
-        Me.RegistrarSalidaToolStripMenuItem.Size = New System.Drawing.Size(211, 30)
+        Me.RegistrarSalidaToolStripMenuItem.Size = New System.Drawing.Size(262, 36)
         Me.RegistrarSalidaToolStripMenuItem.Text = "Registrar Salida"
         '
         'SalirDelSistemaToolStripMenuItem1
         '
         Me.SalirDelSistemaToolStripMenuItem1.Name = "SalirDelSistemaToolStripMenuItem1"
-        Me.SalirDelSistemaToolStripMenuItem1.Size = New System.Drawing.Size(211, 30)
+        Me.SalirDelSistemaToolStripMenuItem1.Size = New System.Drawing.Size(262, 36)
         Me.SalirDelSistemaToolStripMenuItem1.Text = "Salir del sistema"
         '
         'ReportesToolStripMenuItem
         '
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
-        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(95, 29)
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(121, 36)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
         '
         'SistemaToolStripMenuItem
         '
         Me.SistemaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DefinirHoraDeEntradaYSalidaToolStripMenuItem, Me.SalirToolStripMenuItem, Me.ModuloOficinasLocalesToolStripMenuItem})
         Me.SistemaToolStripMenuItem.Name = "SistemaToolStripMenuItem"
-        Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(86, 29)
+        Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(110, 36)
         Me.SistemaToolStripMenuItem.Text = "Sistema"
+        Me.SistemaToolStripMenuItem.Visible = False
         '
         'DefinirHoraDeEntradaYSalidaToolStripMenuItem
         '
         Me.DefinirHoraDeEntradaYSalidaToolStripMenuItem.Name = "DefinirHoraDeEntradaYSalidaToolStripMenuItem"
-        Me.DefinirHoraDeEntradaYSalidaToolStripMenuItem.Size = New System.Drawing.Size(277, 30)
+        Me.DefinirHoraDeEntradaYSalidaToolStripMenuItem.Size = New System.Drawing.Size(350, 36)
         Me.DefinirHoraDeEntradaYSalidaToolStripMenuItem.Text = "Modulo Horarios"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(277, 30)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(350, 36)
         Me.SalirToolStripMenuItem.Text = "Modulo Usuarios"
         '
         'ModuloOficinasLocalesToolStripMenuItem
         '
         Me.ModuloOficinasLocalesToolStripMenuItem.Name = "ModuloOficinasLocalesToolStripMenuItem"
-        Me.ModuloOficinasLocalesToolStripMenuItem.Size = New System.Drawing.Size(277, 30)
+        Me.ModuloOficinasLocalesToolStripMenuItem.Size = New System.Drawing.Size(350, 36)
         Me.ModuloOficinasLocalesToolStripMenuItem.Text = "Modulo Oficinas Locales"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Moonbeam", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(24, 77)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(32, 96)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(545, 87)
+        Me.Label1.Size = New System.Drawing.Size(643, 108)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "00:00:00 a.m."
         '
@@ -184,9 +187,11 @@ Partial Class Principal
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 37)
+        Me.GroupBox1.Location = New System.Drawing.Point(17, 46)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(931, 333)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1241, 416)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "HORARIO"
@@ -194,72 +199,80 @@ Partial Class Principal
         'txt_max_st
         '
         Me.txt_max_st.Enabled = False
-        Me.txt_max_st.Location = New System.Drawing.Point(867, 20)
+        Me.txt_max_st.Location = New System.Drawing.Point(1156, 25)
+        Me.txt_max_st.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_max_st.Name = "txt_max_st"
-        Me.txt_max_st.Size = New System.Drawing.Size(29, 26)
+        Me.txt_max_st.Size = New System.Drawing.Size(37, 32)
         Me.txt_max_st.TabIndex = 24
         Me.txt_max_st.Visible = False
         '
         'txt_min_st
         '
         Me.txt_min_st.Enabled = False
-        Me.txt_min_st.Location = New System.Drawing.Point(832, 20)
+        Me.txt_min_st.Location = New System.Drawing.Point(1109, 25)
+        Me.txt_min_st.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_min_st.Name = "txt_min_st"
-        Me.txt_min_st.Size = New System.Drawing.Size(29, 26)
+        Me.txt_min_st.Size = New System.Drawing.Size(37, 32)
         Me.txt_min_st.TabIndex = 23
         Me.txt_min_st.Visible = False
         '
         'txt_max_et
         '
         Me.txt_max_et.Enabled = False
-        Me.txt_max_et.Location = New System.Drawing.Point(797, 20)
+        Me.txt_max_et.Location = New System.Drawing.Point(1063, 25)
+        Me.txt_max_et.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_max_et.Name = "txt_max_et"
-        Me.txt_max_et.Size = New System.Drawing.Size(29, 26)
+        Me.txt_max_et.Size = New System.Drawing.Size(37, 32)
         Me.txt_max_et.TabIndex = 22
         Me.txt_max_et.Visible = False
         '
         'txt_min_et
         '
         Me.txt_min_et.Enabled = False
-        Me.txt_min_et.Location = New System.Drawing.Point(762, 20)
+        Me.txt_min_et.Location = New System.Drawing.Point(1016, 25)
+        Me.txt_min_et.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_min_et.Name = "txt_min_et"
-        Me.txt_min_et.Size = New System.Drawing.Size(29, 26)
+        Me.txt_min_et.Size = New System.Drawing.Size(37, 32)
         Me.txt_min_et.TabIndex = 21
         Me.txt_min_et.Visible = False
         '
         'txt_max_sm
         '
         Me.txt_max_sm.Enabled = False
-        Me.txt_max_sm.Location = New System.Drawing.Point(727, 20)
+        Me.txt_max_sm.Location = New System.Drawing.Point(969, 25)
+        Me.txt_max_sm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_max_sm.Name = "txt_max_sm"
-        Me.txt_max_sm.Size = New System.Drawing.Size(29, 26)
+        Me.txt_max_sm.Size = New System.Drawing.Size(37, 32)
         Me.txt_max_sm.TabIndex = 20
         Me.txt_max_sm.Visible = False
         '
         'txt_min_sm
         '
         Me.txt_min_sm.Enabled = False
-        Me.txt_min_sm.Location = New System.Drawing.Point(692, 20)
+        Me.txt_min_sm.Location = New System.Drawing.Point(923, 25)
+        Me.txt_min_sm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_min_sm.Name = "txt_min_sm"
-        Me.txt_min_sm.Size = New System.Drawing.Size(29, 26)
+        Me.txt_min_sm.Size = New System.Drawing.Size(37, 32)
         Me.txt_min_sm.TabIndex = 19
         Me.txt_min_sm.Visible = False
         '
         'txt_max_em
         '
         Me.txt_max_em.Enabled = False
-        Me.txt_max_em.Location = New System.Drawing.Point(657, 20)
+        Me.txt_max_em.Location = New System.Drawing.Point(876, 25)
+        Me.txt_max_em.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_max_em.Name = "txt_max_em"
-        Me.txt_max_em.Size = New System.Drawing.Size(29, 26)
+        Me.txt_max_em.Size = New System.Drawing.Size(37, 32)
         Me.txt_max_em.TabIndex = 18
         Me.txt_max_em.Visible = False
         '
         'txt_min_em
         '
         Me.txt_min_em.Enabled = False
-        Me.txt_min_em.Location = New System.Drawing.Point(622, 20)
+        Me.txt_min_em.Location = New System.Drawing.Point(829, 25)
+        Me.txt_min_em.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_min_em.Name = "txt_min_em"
-        Me.txt_min_em.Size = New System.Drawing.Size(29, 26)
+        Me.txt_min_em.Size = New System.Drawing.Size(37, 32)
         Me.txt_min_em.TabIndex = 17
         Me.txt_min_em.Visible = False
         '
@@ -268,11 +281,12 @@ Partial Class Principal
         Me.dg_horario.AllowUserToAddRows = False
         Me.dg_horario.AllowUserToDeleteRows = False
         Me.dg_horario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dg_horario.Location = New System.Drawing.Point(201, 20)
+        Me.dg_horario.Location = New System.Drawing.Point(268, 25)
+        Me.dg_horario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dg_horario.Name = "dg_horario"
         Me.dg_horario.ReadOnly = True
         Me.dg_horario.RowTemplate.Height = 28
-        Me.dg_horario.Size = New System.Drawing.Size(288, 42)
+        Me.dg_horario.Size = New System.Drawing.Size(384, 52)
         Me.dg_horario.TabIndex = 16
         Me.dg_horario.Visible = False
         '
@@ -280,74 +294,83 @@ Partial Class Principal
         '
         Me.txt_s_t.Enabled = False
         Me.txt_s_t.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_s_t.Location = New System.Drawing.Point(374, 283)
+        Me.txt_s_t.Location = New System.Drawing.Point(499, 354)
+        Me.txt_s_t.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_s_t.Name = "txt_s_t"
-        Me.txt_s_t.Size = New System.Drawing.Size(120, 28)
+        Me.txt_s_t.Size = New System.Drawing.Size(159, 35)
         Me.txt_s_t.TabIndex = 15
         '
         'txt_e_t
         '
         Me.txt_e_t.Enabled = False
         Me.txt_e_t.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_e_t.Location = New System.Drawing.Point(127, 283)
+        Me.txt_e_t.Location = New System.Drawing.Point(169, 354)
+        Me.txt_e_t.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_e_t.Name = "txt_e_t"
-        Me.txt_e_t.Size = New System.Drawing.Size(120, 28)
+        Me.txt_e_t.Size = New System.Drawing.Size(159, 35)
         Me.txt_e_t.TabIndex = 14
         '
         'txt_s_m
         '
         Me.txt_s_m.Enabled = False
         Me.txt_s_m.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_s_m.Location = New System.Drawing.Point(373, 212)
+        Me.txt_s_m.Location = New System.Drawing.Point(497, 265)
+        Me.txt_s_m.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_s_m.Name = "txt_s_m"
-        Me.txt_s_m.Size = New System.Drawing.Size(120, 28)
+        Me.txt_s_m.Size = New System.Drawing.Size(159, 35)
         Me.txt_s_m.TabIndex = 13
         '
         'txt_e_m
         '
         Me.txt_e_m.Enabled = False
         Me.txt_e_m.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_e_m.Location = New System.Drawing.Point(126, 214)
+        Me.txt_e_m.Location = New System.Drawing.Point(168, 268)
+        Me.txt_e_m.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_e_m.Name = "txt_e_m"
-        Me.txt_e_m.Size = New System.Drawing.Size(120, 28)
+        Me.txt_e_m.Size = New System.Drawing.Size(159, 35)
         Me.txt_e_m.TabIndex = 12
         '
         'txt_puntualidad
         '
-        Me.txt_puntualidad.Location = New System.Drawing.Point(139, 26)
+        Me.txt_puntualidad.Location = New System.Drawing.Point(185, 32)
+        Me.txt_puntualidad.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_puntualidad.Name = "txt_puntualidad"
-        Me.txt_puntualidad.Size = New System.Drawing.Size(41, 26)
+        Me.txt_puntualidad.Size = New System.Drawing.Size(53, 32)
         Me.txt_puntualidad.TabIndex = 11
         Me.txt_puntualidad.Visible = False
         '
         'txt_tipo
         '
-        Me.txt_tipo.Location = New System.Drawing.Point(101, 26)
+        Me.txt_tipo.Location = New System.Drawing.Point(135, 32)
+        Me.txt_tipo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_tipo.Name = "txt_tipo"
-        Me.txt_tipo.Size = New System.Drawing.Size(32, 26)
+        Me.txt_tipo.Size = New System.Drawing.Size(41, 32)
         Me.txt_tipo.TabIndex = 10
         Me.txt_tipo.Visible = False
         '
         'txt_turno
         '
-        Me.txt_turno.Location = New System.Drawing.Point(62, 26)
+        Me.txt_turno.Location = New System.Drawing.Point(83, 32)
+        Me.txt_turno.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_turno.Name = "txt_turno"
-        Me.txt_turno.Size = New System.Drawing.Size(33, 26)
+        Me.txt_turno.Size = New System.Drawing.Size(43, 32)
         Me.txt_turno.TabIndex = 9
         Me.txt_turno.Visible = False
         '
         'txt_oficina
         '
-        Me.txt_oficina.Location = New System.Drawing.Point(22, 26)
+        Me.txt_oficina.Location = New System.Drawing.Point(29, 32)
+        Me.txt_oficina.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_oficina.Name = "txt_oficina"
-        Me.txt_oficina.Size = New System.Drawing.Size(34, 26)
+        Me.txt_oficina.Size = New System.Drawing.Size(44, 32)
         Me.txt_oficina.TabIndex = 8
         Me.txt_oficina.Visible = False
         '
         'MonthCalendar1
         '
         Me.MonthCalendar1.Enabled = False
-        Me.MonthCalendar1.Location = New System.Drawing.Point(576, 53)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(768, 66)
+        Me.MonthCalendar1.Margin = New System.Windows.Forms.Padding(12, 11, 12, 11)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 3
         '
@@ -355,9 +378,10 @@ Partial Class Principal
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(34, 255)
+        Me.Label7.Location = New System.Drawing.Point(45, 319)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(127, 25)
+        Me.Label7.Size = New System.Drawing.Size(169, 31)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "TARDE     : "
         '
@@ -365,9 +389,10 @@ Partial Class Principal
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(34, 183)
+        Me.Label6.Location = New System.Drawing.Point(45, 229)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(118, 25)
+        Me.Label6.Size = New System.Drawing.Size(153, 31)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "MAÑANA :"
         '
@@ -375,9 +400,10 @@ Partial Class Principal
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(304, 288)
+        Me.Label5.Location = New System.Drawing.Point(405, 360)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 20)
+        Me.Label5.Size = New System.Drawing.Size(85, 26)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Salida :"
         '
@@ -385,9 +411,10 @@ Partial Class Principal
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(44, 290)
+        Me.Label4.Location = New System.Drawing.Point(59, 362)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 20)
+        Me.Label4.Size = New System.Drawing.Size(106, 26)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Entrada : "
         '
@@ -395,9 +422,10 @@ Partial Class Principal
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(303, 217)
+        Me.Label3.Location = New System.Drawing.Point(404, 271)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 20)
+        Me.Label3.Size = New System.Drawing.Size(85, 26)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Salida :"
         '
@@ -405,9 +433,10 @@ Partial Class Principal
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(43, 219)
+        Me.Label2.Location = New System.Drawing.Point(57, 274)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 20)
+        Me.Label2.Size = New System.Drawing.Size(106, 26)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Entrada : "
         '
@@ -422,9 +451,11 @@ Partial Class Principal
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.cbo_usuario)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 378)
+        Me.GroupBox2.Location = New System.Drawing.Point(17, 472)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(931, 203)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(1241, 254)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "REGISTRAR ASISTENCIA"
@@ -433,9 +464,10 @@ Partial Class Principal
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(390, 111)
+        Me.Label9.Location = New System.Drawing.Point(520, 139)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(150, 25)
+        Me.Label9.Size = New System.Drawing.Size(206, 31)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "Hora de ingreso"
         '
@@ -443,27 +475,30 @@ Partial Class Principal
         '
         Me.txt_hora.Enabled = False
         Me.txt_hora.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_hora.Location = New System.Drawing.Point(389, 140)
+        Me.txt_hora.Location = New System.Drawing.Point(519, 175)
+        Me.txt_hora.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_hora.Name = "txt_hora"
-        Me.txt_hora.Size = New System.Drawing.Size(336, 28)
+        Me.txt_hora.Size = New System.Drawing.Size(447, 35)
         Me.txt_hora.TabIndex = 8
         '
         'fec_ingreso
         '
         Me.fec_ingreso.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fec_ingreso.Enabled = False
-        Me.fec_ingreso.Location = New System.Drawing.Point(22, 140)
+        Me.fec_ingreso.Location = New System.Drawing.Point(29, 175)
+        Me.fec_ingreso.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.fec_ingreso.Name = "fec_ingreso"
-        Me.fec_ingreso.Size = New System.Drawing.Size(342, 28)
+        Me.fec_ingreso.Size = New System.Drawing.Size(455, 35)
         Me.fec_ingreso.TabIndex = 7
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(384, 112)
+        Me.Label11.Location = New System.Drawing.Point(512, 140)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(150, 25)
+        Me.Label11.Size = New System.Drawing.Size(206, 31)
         Me.Label11.TabIndex = 6
         Me.Label11.Text = "Hora de ingreso"
         '
@@ -471,17 +506,19 @@ Partial Class Principal
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(17, 112)
+        Me.Label10.Location = New System.Drawing.Point(23, 140)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(163, 25)
+        Me.Label10.Size = New System.Drawing.Size(223, 31)
         Me.Label10.TabIndex = 5
         Me.Label10.Text = "Fecha de ingreso"
         '
         'btn_asistencia
         '
-        Me.btn_asistencia.Location = New System.Drawing.Point(747, 65)
+        Me.btn_asistencia.Location = New System.Drawing.Point(996, 81)
+        Me.btn_asistencia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_asistencia.Name = "btn_asistencia"
-        Me.btn_asistencia.Size = New System.Drawing.Size(170, 109)
+        Me.btn_asistencia.Size = New System.Drawing.Size(227, 136)
         Me.btn_asistencia.TabIndex = 4
         Me.btn_asistencia.Text = "Registrar"
         Me.btn_asistencia.UseVisualStyleBackColor = True
@@ -490,9 +527,10 @@ Partial Class Principal
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(17, 38)
+        Me.Label8.Location = New System.Drawing.Point(23, 48)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(187, 25)
+        Me.Label8.Size = New System.Drawing.Size(257, 31)
         Me.Label8.TabIndex = 2
         Me.Label8.Text = "Seleccionar Usuario"
         '
@@ -500,27 +538,31 @@ Partial Class Principal
         '
         Me.cbo_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbo_usuario.FormattingEnabled = True
-        Me.cbo_usuario.Location = New System.Drawing.Point(21, 69)
+        Me.cbo_usuario.Location = New System.Drawing.Point(28, 86)
+        Me.cbo_usuario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbo_usuario.Name = "cbo_usuario"
-        Me.cbo_usuario.Size = New System.Drawing.Size(704, 30)
+        Me.cbo_usuario.Size = New System.Drawing.Size(937, 37)
         Me.cbo_usuario.TabIndex = 0
         '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.txt_justificacion)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(13, 584)
+        Me.GroupBox3.Location = New System.Drawing.Point(17, 730)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(931, 124)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(1241, 155)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Justificación Tardanza"
         '
         'txt_justificacion
         '
-        Me.txt_justificacion.Location = New System.Drawing.Point(14, 30)
+        Me.txt_justificacion.Location = New System.Drawing.Point(19, 38)
+        Me.txt_justificacion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_justificacion.Name = "txt_justificacion"
-        Me.txt_justificacion.Size = New System.Drawing.Size(903, 78)
+        Me.txt_justificacion.Size = New System.Drawing.Size(1203, 96)
         Me.txt_justificacion.TabIndex = 0
         Me.txt_justificacion.Text = ""
         '
@@ -528,9 +570,11 @@ Partial Class Principal
         '
         Me.GroupBox4.Controls.Add(Me.dg_asistencia)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(13, 717)
+        Me.GroupBox4.Location = New System.Drawing.Point(17, 896)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(931, 305)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(1241, 381)
         Me.GroupBox4.TabIndex = 5
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Registro del día"
@@ -543,11 +587,12 @@ Partial Class Principal
         Me.dg_asistencia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dg_asistencia.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dg_asistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dg_asistencia.Location = New System.Drawing.Point(14, 27)
+        Me.dg_asistencia.Location = New System.Drawing.Point(19, 34)
+        Me.dg_asistencia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dg_asistencia.Name = "dg_asistencia"
         Me.dg_asistencia.ReadOnly = True
         Me.dg_asistencia.RowTemplate.Height = 28
-        Me.dg_asistencia.Size = New System.Drawing.Size(903, 258)
+        Me.dg_asistencia.Size = New System.Drawing.Size(1204, 322)
         Me.dg_asistencia.TabIndex = 0
         '
         'Timer2
@@ -555,11 +600,11 @@ Partial Class Principal
         '
         'Principal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.ClientSize = New System.Drawing.Size(958, 1034)
+        Me.ClientSize = New System.Drawing.Size(1277, 1274)
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -568,7 +613,8 @@ Partial Class Principal
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.MaximumSize = New System.Drawing.Size(1136, 1090)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaximumSize = New System.Drawing.Size(1506, 1345)
         Me.Name = "Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sistema de asistencia NEC PDSS II"

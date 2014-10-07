@@ -14,8 +14,8 @@ Public Class conexion
 
     'Con esta clase nos conectamos a la base de datos
     Public Sub Conectar()
-        con = New MySqlConnection("server=www.sierrasur.gob.pe; user=psierras_oscar; password=sierrasur2; database=psierras_asistencia")
-        'con = New MySqlConnection("server=localhost; user=root; password=root; database=bd_asistencia")
+        'con = New MySqlConnection("server=www.sierrasur.gob.pe; user=psierras_oscar; password=sierrasur2; database=psierras_asistencia")
+        con = New MySqlConnection("server=127.0.0.1; user=root; password=root; database=bd_asistencia")
         con.Open()
     End Sub
 
